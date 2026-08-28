@@ -11,6 +11,13 @@ const rl = readline.createInterface({
 function askForCommand() {
 	rl.question("bolt > ", (command) => {
 		console.log(`You said: ${command}`);
+
+		if (command === "/exit") {
+			console.log("Goodbye 👋");
+			rl.close();
+			return;
+		}
+
 		askForCommand();
 	});
 }
