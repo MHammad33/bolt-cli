@@ -1,17 +1,22 @@
 {
   "name": "bolt-cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Bolt CLI",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "tsx src/index.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Muhammad Hammad",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@types/node": "^26.4.0",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
+  },
+  "bin": {
+    "bolt": "./dist/index.js"
   }
 }
