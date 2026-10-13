@@ -1,0 +1,33 @@
+name: Learning spike
+description: Research a concept and write up what you learned
+title: "spike: "
+labels: ["learning"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What do we need to understand?
+      placeholder: How do tool calls work in the model API, and what does the request/response look like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: Which feature or decision does this unblock?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ] Findings written up as a comment on this issue
+        - [ ] Links to the sources used
+        - [ ] Recommendation for how bolt should do it
+  - type: input
+    id: timebox
+    attributes:
+      label: Timebox
+      placeholder: "e.g. 3 hours"
